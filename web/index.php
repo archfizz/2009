@@ -5,7 +5,13 @@ define('ARCHFIZZ_BASEPATH', __DIR__.'/..');
 require ARCHFIZZ_BASEPATH . '/vendor/autoload.php';
 
 $app = new Silex\Application();
-$app['debug'] = true;
+$app['debug'] = ( ! (
+    isset($_SERVER['HTTP_CLIENT_IP'])
+    || isset($_SERVER['HTTP_X_FORWARDED_FOR'])
+    || !in_array(@$_SERVER['REMOTE_ADDR'], [
+        '127.0.0.1', 'fe80::1', '::1'
+    ])
+));
 
 // Register service providers
 
