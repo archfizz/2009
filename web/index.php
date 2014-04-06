@@ -40,6 +40,13 @@ $app['version'] = $app->share(function() {
     return ArchFizz\Prototype\DigitalController::VERSION;
 });
 
+$app['ga'] = $app->share(function() {
+    return [
+        'tracking_code' => "UA-29516604-2",
+        'property' => "archfizz.org"
+    ];
+});
+
 $app['archfizz.controller'] = $app->share(function() use ($app) {
     return new ArchFizz\Prototype\DigitalController($app['twig']);
 });
