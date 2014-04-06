@@ -1,0 +1,96 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <div id="divMessage">
+        <div class="clMessage">
+            <b>University Work: Year 1 | Project 2: The Athletics Club</b>
+            <p>Location: Spitalfields,  near City of London</p>
+        </div>
+        <div class="clMessage">
+            Codes: AM - AutoCAD Model; AD - AutoCAD Drawing; CL - Collage; MM - Physical Model<br />
+        </div>
+        <!--
+            <div class="clMessage">c</div>
+        -->
+    </div>
+
+    <div class="divImage">
+        <table width="75%" align="center" style="text-align:center">
+            <tr class="rowSeg">
+                <td width="50%">
+                    <img src="{{ asset('_images/MM-151-basementwc.png') }}" />
+                </td>
+                <td>
+                    <img src="{{ asset('_images/MM-154-reception.png') }}" />
+                </td>
+            </tr>
+            <tr class="rowCat">
+                <td width="50%">
+                    MM151 - Basement WC
+                </td>
+                <td>
+                    MM154 - Reception & Lifts on Ground Level
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-152-basement.png') }}" />
+        <br />
+        MM152 - 1:20 Model: Basement
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-153.png') }}" />
+        <br />
+        MM153 - Ground Level (sans Mezzanine)
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-155-groundlevelmezz.png') }}" />
+        <br />
+        MM155 - Ground Level (with Mezzanine)
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-156-mezz.png') }}" />
+        <br />
+        MM156 - Café Mezzanine
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-158-level1.png') }}" />
+        <br />
+        MM158 - First Floor Sport Hall
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-157-stairwell.png') }}" />
+        <br />
+        MM157 - Stairwell
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-159-roofteahouse.png') }}" />
+        <br />
+        MM159 - Rooftop Japanese Tea House
+    </div>
+
+    <div class="divImage">
+        {# ¡ Image name is not consistent ! #}
+        <img src="{{ asset('_images/MM160-roof.png') }}" />
+        <br />
+        MM160 - Roof Garden
+        <br />
+        (the Tea House does have windows and an exit to the garden, this photo was taken before they were cut)
+    </div>
+
+    <div class="divImage">
+        <img src="{{ asset('_images/MM-161-facade.png') }}" />
+        <br />
+        MM161 - Façade of Athletics Club
+    </div>
+
+{% endblock content %}

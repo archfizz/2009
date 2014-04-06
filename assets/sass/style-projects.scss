@@ -1,0 +1,40 @@
+$archfizz-color-1: #00BFFF;
+$archfizz-color-2: #00607F;
+$archfizz-color-3: #3B8AA4;
+$archfizz-color-4: #2F322C;
+$archfizz-color-5: #011321;
+
+table#tbProjects {
+  text-align: left;
+  margin-top: 20px;
+  border-bottom: medium solid $archfizz-color-1;
+}
+
+.rowProjectName td {
+  border-top: medium solid $archfizz-color-1;
+  padding: 5px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: $archfizz-color-2;
+}
+
+.rowDetails td {
+  background-color: $archfizz-color-3;
+  color: #999;
+  font-weight: bold;
+  padding: 2px 5px 4px;
+}
+
+.rowDescription td {
+  background-color: $archfizz-color-4;
+  color: #CCC;
+  padding: 5px;
+}
+
+td.cellIcon {
+  height: 100px;
+  text-align: center;
+  padding-right: 20px;
+  background-color: $archfizz-color-5;
+  vertical-align: top;
+}

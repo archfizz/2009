@@ -1,0 +1,25 @@
+{
+    "name": "archfizz/website-version-zero",
+    "description": "The 2009 version of the website",
+    "require": {
+        "silex/silex": "~1",
+        "symfony/http-foundation": "~2.4",
+        "symfony/yaml": "~2.4",
+        "twig/twig": "~1",
+        "symfony/twig-bridge": "~2.4"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Adam Elsodaney",
+            "email": "adam.elso@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ArchFizz\\Prototype\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

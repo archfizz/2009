@@ -1,0 +1,21 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <div id="divMessage">
+
+        <div class="clMessage"><b>Creative Suite work (Illustrator, Photoshop, Fireworks, InDesign)</b></div>
+        <div class="clMessage">Codes: IL - Illustration ; CL - Collage ; MT - Montage<br /></div>
+       </div>
+
+{#
+$loadportfolio = mysql_query ('SELECT * FROM `af_portfolio` WHERE 1 LIMIT 0, 90 ');
+do {
+if ($row['Application']== 'PSP' || $row['Application']== 'ILL' || $row['Application']== 'IND' || $row['Application']== 'FWK') {
+echo "<div class='divImage'> <img src='_images/full/" . $row['URL'] . "' alt='" . $row['Name'] . "' title='" . $row['Name'] . "' />";
+echo "<br />";
+echo $row['Name'];
+echo "</div>";
+}
+} while($row = mysql_fetch_array($loadportfolio));
+#}
+{% endblock content %}

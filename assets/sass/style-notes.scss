@@ -1,0 +1,34 @@
+table#tbNotes {
+  text-align: left;
+  margin-top: 20px;
+  border-bottom: medium solid #C60;
+}
+
+.rowDocument td {
+  border-top: medium solid #C60;
+  padding: 5px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #311E03;
+}
+
+.rowDetails td {
+  background-color: #2F322C;
+  color: #999;
+  font-weight: bold;
+  padding: 2px 5px 4px;
+}
+
+.rowDescription td {
+  background-color: #2F322C;
+  color: #CCC;
+  padding: 5px;
+}
+
+td.cellIcon {
+  height: 100px;
+  text-align: center;
+  padding-right: 20px;
+  background-color: #160C00;
+  vertical-align: top;
+}

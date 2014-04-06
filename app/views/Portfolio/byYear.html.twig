@@ -1,0 +1,31 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+<!-- BEGIN page specific content -->
+
+    <div id="divMessage">
+
+        <div class="clMessage">
+            Sorry, the data to render this page is not available. (flipping tables or look of disapproval)
+        </div>
+
+        <div class="clMessage"> -
+            <br />
+        </div>
+    </div>
+
+{#
+    $loadportfolio = mysql_query ('SELECT * FROM `af_portfolio` WHERE 1 LIMIT 0, 60 ');
+        do    {
+            if ($row['Year']== '2009' && $row['Uni']=='0') {
+                echo "<div class='divImage'> <img src='_images/full/" . $row['URL'] . "' alt='" . $row['Name'] . "' title='" . $row['Name'] . "' />";
+                echo "<br />";
+                echo $row['Name'];
+                echo "</div>";
+                }
+        } while($row = mysql_fetch_array($loadportfolio));
+#}
+    <div style="background-color:#000; "> &nbsp; </div>
+
+
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <div id="divMessage">
+
+        <div class="clMessage">
+          {#
+          <b>All 3D work, architectural and non-archtectural, modelled and rendered in AutoCAD</b>
+          #}
+          <p></p>
+        </div>
+        <div class="clMessage">-<br />
+      </div>
+        <!-- <div class="clMessage" style="color:#FFF"> Click on thumbnails to view full size images (JPEG)
+             </div> -->
+      </div>
+
+{#
+// $connect = @mysql_connect("db1270.oneandone.co.uk","dbo346979492","XXXXX") or die ("<tr> <td colspan='2'> Connection to server failed. </td> </tr>");
+// @mysql_select_db("db346979492") or die ("<tr> <td colspan='2'> Connection to database failed. </td> </tr>");
+
+$loadportfolio = mysql_query ('SELECT * FROM `af_portfolio` WHERE Application="ACA" and Drawingtype="3D CAD Model" ORDER BY Year DESC');
+while($row = mysql_fetch_array($loadportfolio)){
+echo "<div class='divImage'> <img src='_images/full/" . $row['URL'] . "' alt='" . $row['Name'] . "' title='" . $row['Name'] . "' />";
+echo "<br />";
+echo $row['Code'];
+echo ": " . $row['Name'] . " [" . $row['Year'] . "]";
+echo "</div>";
+};
+#}
+
+<!-- Add buttons to image divs later
+
+    <a href="#">
+    <img src="_images/button-j0.png" alt="View JPEG" name="imgJpegAD582" /></a>
+
+    <a href="#">
+    <img src="_images/button-p0.png" alt="view PDF" name="imgPdfAD582" /></a>
+-->
+{% endblock content %}

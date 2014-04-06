@@ -1,0 +1,73 @@
+div.divSkillset {
+  background-color: #23291F;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FFF;
+  width: 325px;
+  float: left;
+  display: inline;
+  text-align: left;
+  font-weight: bold;
+  border-color: #CCC;
+  border-style: solid;
+  border-width: thin;
+  margin: 5px 10px 5px 10px;
+  clear: both;
+}
+
+div.divSkillset:first-child {
+  margin-left: 10px;
+}
+
+div.divSkillset ul {
+  background-color: #23291F;
+  padding-bottom: 5px;
+}
+
+div.divSkillset li {
+  font-weight: normal;
+}
+
+div.divSkills {
+  background-color: #23291F;
+  clear: both;
+  width: 800px;
+  text-align: center;
+}
+
+div.divFeatures {
+  background-color: #23291F;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FFF;
+  width: 325px;
+  float: left;
+  display: inline;
+  text-align: left;
+  font-weight: bold;
+  border-color: #CCC;
+  border-style: solid;
+  border-width: thin;
+  margin: 5px 10px;
+  clear: both;
+}
+
+div.divFeatures:first-child {
+  margin-left: 10px;
+}
+
+div.divFeatures ul {
+  background-color: #23291F;
+}
+
+div.divFeatures li {
+  font-weight: normal;
+}
+
+div.divVersion {
+  background-color: #23291F;
+  clear: both;
+  width: 800px;
+  padding-bottom: 5px;
+  text-align: center;
+}

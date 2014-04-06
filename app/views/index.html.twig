@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include '_partials/headtag.html.twig' %}
+    <title>ArchFizz :: Personal Website of Adam Elsodaney</title>
+</head>
+<body onload="fnRunSlideShow()">
+    {% include '_partials/alert.html.twig' %}
+
+    <div id="divContainer">
+        {% include "_partials/header.html.twig" %}
+
+        {% block content %}
+            <div id="divMessage">
+                <div class="clMessage">
+                    <span style="color:#CCC;">Welcome to ArchFizz</span>
+                </div>
+            </div>
+
+    {# Messages #}
+
+            <div id="divSlide">
+                <img src="{{ asset('_images/ss-01.jpg') }}" id="imgSlide" title="portfolio slideshow" alt="Slideshow not loaded" />
+            </div>
+
+            <div id="divContent">
+                <p>-</p>
+            </div>
+
+            <div id="divSegments">
+                <br />
+                {% for siteSection in [ 'Portfolio', 'Workshop', 'Projects', 'Notes' ] %}
+                    {% if siteSection in [ 'Portfolio' ] %}
+                        <a href="{{ path(siteSection|lower) }}">
+                            <img src="{{ asset('_images/button-' ~ siteSection|lower ~ '0.png') }}" class="imgRollover" alt="{{ siteSection }}" title="{{ siteSection }}" id="img{{ siteSection }}" />
+                        </a>
+                    {% else %}
+                        <a href="#" data-reveal-id="noContentModal" data-reveal>
+                            <img src="{{ asset('_images/button-' ~ siteSection|lower ~ '0.png') }}" class="imgRollover" alt="{{ siteSection }}" title="{{ siteSection }}" id="img{{ siteSection }}" />
+                        </a>
+
+                    {% endif %}
+                {% endfor %}
+
+                <div id="noContentModal" class="reveal-modal" data-reveal>
+                    <h2>Oh, Bugger.</h2>
+                    <p class="lead">This content is missing.</p>
+                    <p>If I find it, I'll restore it</p>
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+            </div>
+        {% endblock content %}
+
+        {% include "_partials/footer.html.twig" %}
+
+    <script type="text/javascript" src="{{ asset('components/jquery/dist/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('components/foundation/js/foundation.min.js') }}"></script>
+    <script type="text/javascript">
+        $(function() {
+            // set up rollover
+            $(".imgRollover").hover(function() {
+                this.src = this.src.replace("0.", "1.");
+                $("#spanStatus").html(this.title);
+                $("#spanStatusBar").html(this.title);
+            }, function() {
+                this.src = this.src.replace("1.", "0.");
+                $("#spanStatus").html ("Social Networking Links");
+                $("#spanStatusBar").html("");
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        var arrayImage = new Array();
+        arrayImage[0] = "{{ asset('_images/ss-01.jpg') }}";
+        arrayImage[1] = "{{ asset('_images/ss-02.jpg') }}";
+        arrayImage[2] = "{{ asset('_images/ss-03.jpg') }}";
+        arrayImage[3] = "{{ asset('_images/ss-04.jpg') }}";
+        arrayImage[4] = "{{ asset('_images/ss-05.jpg') }}";
+        arrayImage[5] = "{{ asset('_images/ss-06.jpg') }}";
+        arrayImage[6] = "{{ asset('_images/ss-07.jpg') }}";
+        arrayImage[7] = "{{ asset('_images/ss-08.jpg') }}";
+        var slideShowSpeed = 5000;
+        var crossFadeDuration = 3;
+        var t;
+        var j = 0;
+        var p = arrayImage.length;
+        var arrayPreloader = new Array();
+        for (i = 0; i < p; i++) {
+            arrayPreloader[i] = new Image();
+            arrayPreloader[i].src = arrayImage[i];
+        }
+        function fnRunSlideShow() {
+            if (document.all) {
+                document.images.imgSlide.style.filter="blendTrans(duration=2)";
+                document.images.imgSlide.style.filter="blendTrans(duration=crossFadeDuration)";
+                document.images.imgSlide.filters.blendTrans.Apply();
+            }
+            document.images.imgSlide.src = arrayPreloader[j].src;
+
+            if (document.all) {
+                document.images.imgSlide.filters.blendTrans.Play();
+            }
+            j = j + 1;
+            if (j > (p - 1)) {
+                j = 0;
+            }
+            t = setTimeout('fnRunSlideShow()', slideShowSpeed);
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>

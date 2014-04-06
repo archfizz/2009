@@ -1,0 +1,31 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <div id="divMessage">
+        <div class="clMessage"> <h3>About myself and archfizz.com</h3> </div>
+        <div class="clMessage">
+            <p class='txtGrey'>I set up this website in February 2009 due to a number of requests from tutors, friends, professionals or those I had just met to see a website with my <a href="/portfolio">portfolio work</a>.  </p>
+            <br />
+      <p class="txtGrey">I'll be utilising this site for more than just exhibiting my work. To help friends from University with some problems and how-tos on certain programs we used for our work, by setting up the <a href="/workshop">Workshop</a>. To put some of my personal <a href="/projects">projects</a> I do in my spare time. Also non-visual content will be posted as <a href="/notes">Notes</a>.</p> </div>
+        <div class="clMessage">
+            <p class="txtGrey">Much of it is still yet to be completed (current version: {{ app.version }}). You can also visit the social networking profiles linked with this site [YouTube and LinkedIn buttons on the top-right corner].</p>
+
+            <br />
+            <p> Contact: adam @ archfizz .com (remove spaces if copying)
+            </div>
+        </div>
+
+ <div style="clear:both; width:800px; background-color:#000; float:left; ">
+
+    <div id="divSkills" style="float:left; width:390px; border-right:2px solid #5DCFC3;"> <h3>Skills</h3>
+        {% include "_partials/skills.html.twig" %}
+    </div>
+
+    <div id="divVersion" style="float:left; width:390px;"> <h3>Website Updates</h3>
+        {% include "_partials/version.html.twig" %}
+
+    </div>
+</div>
+
+{% endblock content %}
+

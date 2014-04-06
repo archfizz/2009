@@ -1,0 +1,33 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <!-- BEGIN page specific content -->
+
+    <div id="divMessage">
+        <div class="clMessage"> Year 2
+        </div>
+
+        <div class="clMessage"> -
+            <br />
+        </div>
+    </div>
+
+    <div id="divContent">
+        <br />
+    </div>
+
+    <div style="background:black;">
+{#
+        <?php $portfolioImages = array(); ?>
+        <?php foreach ($portfolioImages as $image): ?>
+            <div class="divImage">
+                <img src="_images/full/<?=$image['url'];?>" alt="<?=$image['name'];?>" title="<?=$image['name'];?>" />
+                <br />
+                <?=$image['code'];?>
+                :
+                <?=$image['name'];?>
+            </div>
+        <?php endforeach; ?>
+#}
+    </div>
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <div id="divMessage">
+        <div class="clMessage"> A collection of some of my work done in 3DS Max.
+        </div>
+        <div class="clMessage"> More to come later.
+            <br />
+        </div>
+    </div>
+
+{#
+    $loadportfolio = mysql_query ('SELECT * FROM `af_portfolio` WHERE 1 LIMIT 0, 60 ');
+        do    {
+            if ($row['Application']=='MAX') {
+                echo "<div class='divImage'> <img src='_images/full/" . $row['URL'] . "' alt='" . $row['Name'] . "' title='" . $row['Name'] . "' />";
+                echo "<br />";
+                echo $row['Name'];
+                echo "</div>";
+                }
+        } while($row = mysql_fetch_array($loadportfolio));
+#}
+
+{% endblock content %}

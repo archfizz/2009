@@ -1,0 +1,470 @@
+/* ArchFizz v0.9 CSS Template */
+
+@import "colors";
+@import "settings";
+@import "foundation/components/alert-boxes";
+@import "foundation/components/reveal";
+
+* {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  color: $archfizz-primary-color;
+  font-weight: normal;
+  font-size: 10px;
+  background: $archfizz-background-color $archfizz-background-image repeat top left;
+  margin-top: 2px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: rem-calc(10);
+}
+
+.txtGrey {
+  color: #CCC;
+}
+
+.clMessage {
+  border-top-style: solid;
+  border-top-color: #999;
+  border-top-width: thin;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+
+  &:first-child {
+    border-top-style: none;
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+  }
+}
+
+.clContentA {
+  border-top-style: solid;
+  border-top-color: $archfizz-primary-color;
+  border-top-width: thin;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+
+.clSeg {
+  text-align: center;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.clSocial {
+  list-style-type: none;
+}
+
+#navSegments {
+  list-style-type: none;
+  text-align: center;
+
+  li {
+    display: inline;
+  }
+}
+
+il {
+  list-style-type: circle;
+}
+
+.clSocial {
+  display: inline;
+  float: right;
+  padding: 2px;
+}
+
+span.refInactive {
+  color: #333;
+  filter: alpha(opacity=45);
+  opacity: 0.45;
+}
+
+a {
+  &:link {
+    color: $archfizz-primary-color;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $archfizz-primary-color;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: #F00;
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+#divMessage {
+  background-color: #111111;
+  border-top-style: solid;
+  border-top-color: #999;
+  border-top-width: thin;
+  font-weight: lighter;
+  font-size: 12px;
+  color: $archfizz-primary-color;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+#divInfo {
+  background-color: #000;
+  border-top-style: solid;
+  border-top-color: $archfizz-primary-color;
+  border-top-width: thin;
+  font-weight: lighter;
+  font-size: 12px;
+  color: #CCC;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  max-height: 15px;
+  height: 15px;
+}
+
+#divBreadcrumb {
+  border-top-style: none;
+  display: inline;
+  float: left;
+}
+
+#divAbout {
+  border-top-style: none;
+  text-align: right;
+  display: inline;
+  float: right;
+}
+
+#spanAbout {
+  color: $archfizz-primary-color;
+  vertical-align: top;
+  text-align: right;
+  margin-right: -5px;
+  line-height: 18px;
+}
+
+#divContent {
+  background-color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+div.divList {
+  background-color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.divMain {
+  background-color: #000;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+#divSlide {
+  background-color: #000;
+}
+
+#viewport {
+  display: block;
+}
+
+#navSlide {
+  height: 40px;
+  background: #222;
+  margin-bottom: 40px;
+  position: relative;
+  top: -40px;
+  opacity: 0.7;
+
+  li {
+    display: inline;
+    line-height: 40px
+  }
+}
+
+#havSlide {
+  li {
+    a {
+      color: #FFF;
+      margin-left: 10px;
+      text-decoration: none
+    }
+  }
+}
+
+#divNavigation {
+  background-color: #000;
+}
+
+#divSegments {
+  background-color: #000;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  height: 120px;
+  text-align: center;
+}
+
+#divContainer {
+  width: 800px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.divImage {
+  background-color: #000;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-color: #242D06;
+  border-top-style: solid;
+  border-top-width: medium;
+}
+
+div.divImageSmall {
+  background-color: #000;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  width: 233px;
+}
+
+.divImageSmall {
+  &:first-child {
+    margin-left: 50px;
+  }
+}
+
+
+img.imgSmall {
+  padding: 5px;
+}
+
+/* WORKSHOPS */
+
+table#tbWorkshop {
+  text-align: center;
+  margin-top: 20px;
+}
+
+tr.rowIcon {
+  height: 90px;
+  padding: 5px;
+}
+
+tr.rowLabel {
+  height: 60px;
+}
+
+tr.rowSeg {
+  /* TO BE replaced with rowIcon class */
+  height: 150px;
+  padding: 5px;
+}
+
+td.cellSeg {
+  width: 190px;
+}
+
+tr.rowCat {
+  /* TO BE replaced with rowLabel class */
+  height: 30px;
+}
+
+/* STANDARD STYLE ATTRIBUTES FOR ALL PAGES */
+
+/* HEADER  DIVS */
+
+#divHeader {
+  height: 20px;
+  vertical-align: middle;
+}
+
+#divNW {
+  width: 20px;
+  height: 20px;
+  background: image-url('corners.png') 0 0;
+  float: left;
+}
+
+#divN {
+  width: 760px;
+  height: 20px;
+  background-color: $archfizz-primary-color;
+  float: left;
+  vertical-align: middle;
+}
+
+#divNE {
+  width: 20px;
+  height: 20px;
+  background: image-url('corners.png') -20px 0px;
+  float: left;
+}
+
+#spanVersion {
+  text-align: left;
+  color: #000;
+  float: left;
+  vertical-align: middle;
+}
+
+#spanStatus {
+  text-align: right;
+  color: #000;
+  width: 400px;
+  float: right;
+  vertical-align: bottom;
+}
+
+span.FooterBar {
+  text-align: left;
+  color: #000;
+  float: left;
+  padding-right: 5px;
+}
+
+/* BANNER  DIVS */
+
+#divBanner {
+  height: 60px;
+  background-color: #FFF;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#divLogo {
+  width: 300px;
+  height: 60px;
+  float: left;
+  padding-left: 0px;
+  text-align: left;
+}
+
+#divSocial {
+  width: 240px;
+  float: right;
+}
+
+/* FOOTER DIVS */
+
+#divFooter {
+  height: 20px;
+}
+
+#divSW {
+  width: 20px;
+  height: 20px;
+  background: image-url('corners.png') 0 -20px;
+  float: left;
+}
+
+#divS {
+  width: 760px;
+  height: 20px;
+  background-color: $archfizz-primary-color;
+  float: left;
+}
+
+#divSE {
+  width: 20px;
+  height: 20px;
+  background: image-url('corners.png') -20px -20px;
+  float: left;
+}
+
+#divCopyright {
+  width: 800px;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+  page-break-after: always;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+/* SEASONAL STYLES  */
+#divNoContrast {
+  height: 5px;
+  background-color: #003;
+  border-top: solid medium #000;
+}
+
+// @import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";

@@ -1,0 +1,53 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+<div id="divMessage">
+
+        <div class="clMessage">        <b>All 2D work, architectural or non-archtectural, drawn in AutoCAD</b>
+                                    <p></p>
+        </div>
+        <div class="clMessage">-<br />
+      </div>
+        <!-- <div class="clMessage" style="color:#FFF"> Click on thumbnails to view full size images (JPEG)
+             </div> -->
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AD-500-mayfair.jpg') }}" />
+            <br /> AD500 - Mayfair - Virtual Artefact Map (personal project)
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AD-90-plancontext.jpg') }}" />
+            <br /> AD484 -  Bridge Gallery Top Level
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AD-341-sectionofpavilion.jpg') }}" />
+            <br /> AD371 - Avery Hill Pavilion Section
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AD-92-plansecondfloor.jpg') }}" alt="Bridge Gallery Second Floor Plan" />
+            <br /> AD482 - Bridge Gallery: Level 2
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AD-511-luminapenthouse.jpg') }}" />
+            <br /> AD510 - Lumina Penthouse: Upstairs
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AD-601-MP5SD5.jpg') }}" />
+            <br /> AD601 - MP5SD5
+      </div>
+
+<!-- Add buttons to image divs later
+
+    <a href="#">
+    <img src="{{ asset('_images/button-j0.png') }}" alt="View JPEG" name="imgJpegAD582" /></a>
+
+    <a href="#">
+    <img src="{{ asset('_images/button-p0.png') }}" alt="view PDF" name="imgPdfAD582" /></a>
+-->
+{% endblock content %}

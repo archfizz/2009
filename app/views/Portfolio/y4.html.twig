@@ -1,0 +1,50 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <div id="divMessage">
+
+        <div class="clMessage">        <b>University Work: Year 4 | Project 2: The Bridge Gallery</b>
+                                    <p>Location: River Isis,  Oxford</p>
+        </div>
+        <div class="clMessage">Codes: AM - AutoCAD Model; AD - AutoCAD Drawing; CL - Collage; MM - Physical Model<br />
+      </div>
+        <!-- <div class="clMessage" style="color:#FFF"> Click on thumbnails to view full size images (JPEG)
+             </div> -->
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AD-92-plansecondfloor.jpg') }}" />
+            <br /> AD482 - Bridge Gallery: Level 2
+      </div>
+
+      <div class="divImage">
+            <img src="{{ asset('_images/AM-53-ppbridgeskeleton.jpg') }}" />
+            <br /> AM452 - Skeleton of Bridge Gallery
+      </div>
+
+        <div class="divImage">
+            <img src="{{ asset('_images/AM-51-papergallery.jpg') }}" />
+            <br /> AM452 - Inside Bridge Gallery
+        </div>
+
+        <div class="divImage">
+            <img src="{{ asset('_images/AM-52-paperbridge.jpg') }}" />
+            <br /> AM453 - Outside Bridge Gallery
+        </div>
+
+
+        <div class="divImage">
+            <img src="{{ asset('_images/AM-01-oxfordcity3d.jpg') }}" />
+            <br /> AM490 - Oxford City 3D Map
+        </div>
+
+        <div class="divImage">
+            <img src="{{ asset('_images/CL-404-paintingcityscape.jpg') }}" />
+            <br /> CL404 - Paper City Montage
+        </div>
+
+        <div class="divImage">
+            <img src="{{ asset('_images/MM-401-modelbridge.jpg') }}" />
+            <br />  MM401 - Sketch Model
+        </div>
+{% endblock content %}

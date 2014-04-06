@@ -1,0 +1,96 @@
+{% extends "index.html.twig" %}
+
+{% block content %}
+        <div id="divMessage">
+            <div class="clMessage">
+                Here you will find all my work created for study, for clients and for myself.
+            </div>
+            <div class="clMessage">
+                New pages to be added soon.
+                <br />
+            </div>
+            <!-- <div class="clMessage"></div> -->
+        </div>
+
+        <div class="divImage">
+            <!-- id="divContent" align="center" -->
+            <table id="tbWorkshop" align="center">
+                <!-- change name of table from tbWorkshop-->
+
+                <tr class="rowCat">
+                    <td colspan="4">View work by Degree Year</td>
+                </tr>
+                <tr class="rowSeg">
+                    {% for y in 1..4 %}
+                        <td class="cellSeg">
+                            <a href="{{ path('portfolio_university', { universityYear: y }) }}">
+                                <img src="{{ asset('_images/icons/y' ~ y ~ '-0.png') }}" class="imgRollover" alt="Year {{ y }}" id="imgY{{ y }}" title="Year {{ y }} University Work ({{ 2004 + y }}/{{ 2004 + y + 1 }})" />
+                            </a>
+                        </td>
+                    {% endfor %}
+                </tr>
+
+                <tr class="rowCat">
+                    <td colspan="4">
+                        View work by Application
+                    </td>
+                </tr>
+
+                <tr class="rowSeg">
+                    {% for portfolioAppName in [
+                        "AutoCAD 2D",
+                        "AutoCAD 3D",
+                        "3ds Max",
+                        "Creative Suite"
+                    ] %}
+                        <td class="cellSeg">
+                            <a href="{{ path('portfolio_by_app', { appName: portfolioAppName|lower|replace({' ': ''}) }) }}">
+                                <img
+                                    src="{{ asset('_images/icons/' ~ portfolioAppName|lower|replace({' ': ''}) ~ '-0.png') }}"
+                                    class="imgRollover" alt="AutoCAD 2D work" id="img{{ portfolioAppName|replace({' ': ''}) }}"
+                                    title="{{ portfolioAppName }} work"
+                                />
+                            </a>
+                        </td>
+                    {% endfor %}
+                        {#
+                        <td class="cellSeg"><a href="{{ path('portfolio_by_app', { appName: 'autocad3d' }) }}">
+                            <img src="{{ asset('_images/icons/acad3d-0.png') }}" class="imgRollover" alt="AutoCAD 3D work" id="imgAcad3d" title="AutoCAD 3D work" /></a>
+                        </td>
+                        <td class="cellSeg"><a href="{{ path('portfolio_by_app', { appName: '3dsmax' }) }}">
+                            <img src="{{ asset('_images/icons/3dsmax-0.png') }}" class="imgRollover" alt="3ds Max work" id="img3dsmax" title="3DSMax work" /></a>
+                        </td>
+                        <td class="cellSeg"><a href="{{ path('portfolio_by_app', { appName: 'creativeSuite' }) }}">
+                            <img src="{{ asset('_images/icons/cs-0.png') }}" class="imgRollover" alt="Creative Suite" id="imgCs" title="Creative Suite work" /></a>
+                        </td>
+                        #}
+                </tr>
+
+                <tr class="rowCat">
+                    <td colspan="4">
+                        View work by Year (post Degree)
+                    </td>
+                </tr>
+
+                <tr class="rowSeg">
+                    <td class="cellSeg">
+                        <a href="{{ path('portfolio_by_year', { year: 2009 }) }}" onMouseOut="fnMouse0 ('img2009','_images/icons/2009-0.png')" OnMouseOver="fnMouse1('img2009','_images/icons/2009-1.png')">
+                            <img src="{{ asset('_images/icons/2009-0.png') }}" class="imgRollover" alt="2009" id="img2009" title="2009 work" />
+                        </a>
+                    </td>
+                    <td class="cellSeg">
+                        <a href="{{ path('portfolio_by_year', { year: 2010 }) }}" onMouseOut="fnMouse0 ('img2010','_images/icons/2010-0.png')" OnMouseOver="fnMouse1('img2010','_images/icons/2010-1.png')">
+                            <img src="{{ asset('_images/icons/2010-0.png') }}" class="imgRollover" alt="2010" id="img2010" title="2010 work" />
+                        </a>
+                    </td>
+                    <td class="cellSeg">
+                        <a href="{{ path('portfolio_by_year', { year: 2011 }) }}" onMouseOut="fnMouse0 ('img2011','_images/icons/2011-0.png')" OnMouseOver="fnMouse1('img2011','_images/icons/2011-1.png')">
+                            <img src="{{ asset('_images/icons/2011-0.png') }}" class="imgRollover" alt="2011" id="img2011" title="2011 work" />
+                        </a>
+                    </td>
+                    <td class="cellSeg"></td>
+                </tr>
+            </table>
+        </div>
+
+{% endblock content %}

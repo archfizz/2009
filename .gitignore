@@ -1,0 +1,7 @@
+*.mno
+/vendor/
+/app/cache/
+/web/components/*
+.sass-cache/*
+*.DS_Store
+/web/_styles/*
