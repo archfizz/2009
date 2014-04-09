@@ -30,3 +30,12 @@ Install yourself
     $ composer install
     $ bower install
     $ compass compile
+
+
+License
+-------
+
+You MAY clone to repository and change the various properties for your own site.
+You MAY even copy the styles and you would be encouraged to alter the colors or textures to your needs.
+
+However, you MAY NOT copy the "ArchFizz" name, logo or any of the portfolio images.
