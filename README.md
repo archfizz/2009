@@ -3,7 +3,7 @@ ArchFizz.co.uk : 2009 - 2011
 
 [Legacy website](http://2009.archfizz.org/) restored with new technologies, but content is still the same.
 
-Uses Composer, Silex, Twig, Grunt, Bower, Sass, Compass and Zurb Foundation 5.
+Uses Composer, Silex, Twig, PSR-4 autoloading, Behat 3, Grunt, Bower, Sass, Compass and Zurb Foundation 5.
 
 
 Prerequisites
@@ -35,6 +35,14 @@ The Composer install command will also run
     $ bower install
     $ compass compile
     $ grunt
+
+
+Run Tests
+---------
+
+Web acceptance tests are run using Behat 3.0 and the Mink Extension. Run the following command to execute them.
+
+    $ bin/behat
 
 
 License
