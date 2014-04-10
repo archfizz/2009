@@ -1,5 +1,5 @@
 default:
   extensions:
     Behat\MinkExtension\Extension:
-      base_url:  'http://fudev.localhost/2009/web'
+      base_url:  'http://dev.2009.archfizz.org'
       goutte:    ~
