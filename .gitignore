@@ -5,3 +5,4 @@
 .sass-cache/*
 *.DS_Store
 /web/_styles/*
+/node_modules/*

@@ -3,7 +3,7 @@ ArchFizz.co.uk : 2009 - 2011
 
 [Legacy website](http://2009.archfizz.org/) restored with new technologies, but content is still the same.
 
-Uses Composer, Silex, Twig, Bower, Sass, Compass and Zurb Foundation 5.
+Uses Composer, Silex, Twig, Grunt, Bower, Sass, Compass and Zurb Foundation 5.
 
 
 Prerequisites
@@ -16,10 +16,11 @@ Prerequisites:
   * Composer
   * Node.js
   * NPM
-  * Bower
+  * Bower (`sudo npm install -g bower`)
+  * Grunt (`sudo npm install -g grunt`)
   * Ruby
   * Sass
-  * Compass
+  * Compass (`sudo gem install compass` - will also install Sass)
 
 
 Install yourself
