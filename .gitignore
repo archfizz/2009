@@ -6,3 +6,4 @@
 *.DS_Store
 /web/_styles/*
 /node_modules/*
+/bin/*

@@ -8,6 +8,11 @@
         "twig/twig": "~1",
         "symfony/twig-bridge": "~2.4"
     },
+    "require-dev": {
+        "behat/behat": "~3",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*"
+    },
     "license": "proprietary",
     "authors": [
         {
@@ -19,6 +24,9 @@
         "psr-4": {
             "ArchFizz\\Prototype\\": "src/"
         }
+    },
+    "config": {
+        "bin-dir": "bin"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
