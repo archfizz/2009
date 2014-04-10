@@ -17,7 +17,7 @@ Prerequisites:
   * Node.js
   * NPM
   * Bower (`sudo npm install -g bower`)
-  * Grunt (`sudo npm install -g grunt`)
+  * Grunt (`sudo npm install -g grunt-cli`)
   * Ruby
   * Sass
   * Compass (`sudo gem install compass` - will also install Sass)
