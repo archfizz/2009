@@ -21,5 +21,12 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+            "bower install",
+            "compass compile",
+            "grunt"
+        ]
+    }
 }

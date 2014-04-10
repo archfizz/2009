@@ -29,8 +29,12 @@ Install yourself
     $ git clone https://github.com/archfizz/2009 archfizz2009
     $ cd archfizz2009
     $ composer install
+
+The Composer install command will also run
+
     $ bower install
     $ compass compile
+    $ grunt
 
 
 License
