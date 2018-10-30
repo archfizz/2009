@@ -1,5 +1,6 @@
 *.mno
 /vendor/
+/bundle/
 /app/cache/
 /web/components/*
 .sass-cache/*

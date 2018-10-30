@@ -33,7 +33,7 @@
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
-            "compass compile",
+            "bundle exec compass compile",
             "grunt"
         ]
     }
