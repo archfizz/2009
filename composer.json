@@ -34,7 +34,7 @@
     "scripts": {
         "post-install-cmd": [
             "bundle exec compass compile",
-            "grunt"
+            "yarn run grunt"
         ]
     }
 }
