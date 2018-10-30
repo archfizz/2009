@@ -1,6 +1,7 @@
 {
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.10.0",
+    "yarn": ">= 1.0.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -9,5 +10,16 @@
     "grunt-contrib-qunit": "~0.3.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-uglify": "~0.2.7"
+  },
+  "dependencies": {
+    "@bower_components/fastclick": "ftlabs/fastclick#>=0.6.11",
+    "@bower_components/foundation": "zurb/bower-foundation#*",
+    "@bower_components/jquery": "jquery/jquery-dist#>= 2.1.0",
+    "@bower_components/jquery-placeholder": "mathiasbynens/jquery-placeholder#~2.0.7",
+    "@bower_components/jquery.cookie": "carhartl/jquery-cookie#~1.4.0",
+    "@bower_components/modernizr": "Modernizr/Modernizr#2.8.3"
+  },
+  "scripts": {
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'web/components', 'junction') } catch (e) { }\""
   }
 }
