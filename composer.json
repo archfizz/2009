@@ -33,7 +33,6 @@
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
-            "bower install",
             "compass compile",
             "grunt"
         ]
