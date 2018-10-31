@@ -16,7 +16,7 @@ $app['debug'] = ( ! (
 // Register service providers
 
 $app->register(new Silex\Provider\TwigServiceProvider(), [
-    'twig.path' => ARCHFIZZ_BASEPATH.'/app/views',
+    'twig.path' => ARCHFIZZ_BASEPATH.'/templates',
 ]);
 
 $app->register(new Silex\Provider\RoutingServiceProvider());
