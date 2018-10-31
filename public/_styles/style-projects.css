@@ -1,0 +1,9 @@
+table#tbProjects { text-align: left; margin-top: 20px; border-bottom: medium solid #00BFFF; }
+
+.rowProjectName td { border-top: medium solid #00BFFF; padding: 5px; font-weight: bold; color: #FFF; background-color: #00607F; }
+
+.rowDetails td { background-color: #3B8AA4; color: #999; font-weight: bold; padding: 2px 5px 4px; }
+
+.rowDescription td { background-color: #2F322C; color: #CCC; padding: 5px; }
+
+td.cellIcon { height: 100px; text-align: center; padding-right: 20px; background-color: #011321; vertical-align: top; }

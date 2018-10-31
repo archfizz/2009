@@ -5,9 +5,9 @@ add_import_path "node_modules/@bower_components/foundation/scss"
 http_path = "/"
 sass_dir = "assets/sass"
 
-css_dir = "web/_styles"
-images_dir = "web/_images"
-javascripts_dir = "web/_scripts"
+css_dir = "public/_styles"
+images_dir = "public/_images"
+javascripts_dir = "public/_scripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :compact

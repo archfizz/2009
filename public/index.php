@@ -19,35 +19,35 @@ $app->register(new Silex\Provider\TwigServiceProvider(), [
     'twig.path' => ARCHFIZZ_BASEPATH.'/app/views',
 ]);
 
-$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+$app->register(new Silex\Provider\RoutingServiceProvider());
 
 $app->register(new Silex\Provider\ServiceControllerServiceProvider());
 
 // Define parameters and services
 
-$app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+$app['twig'] = $app->extend('twig', function(\Twig_Environment $twig, $app) {
     $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) use ($app) {
         return sprintf('%s/%s',
-            $app['request']->getBasePath(),
+            $app['request_stack']->getCurrentRequest()->getBasePath(),
             ltrim($asset, '/')
         );
     }));
 
     return $twig;
-}));
+});
 
-$app['version'] = $app->share(function() {
+$app['version'] = (function() {
     return ArchFizz\Prototype\DigitalController::VERSION;
 });
 
-$app['ga'] = $app->share(function() {
+$app['ga'] = (function() {
     return [
         'tracking_code' => "UA-29516604-2",
         'property' => "archfizz.org"
     ];
 });
 
-$app['archfizz.controller'] = $app->share(function() use ($app) {
+$app['archfizz.controller'] = (function() use ($app) {
     return new ArchFizz\Prototype\DigitalController($app['twig']);
 });
 
