@@ -3,14 +3,13 @@
     "node": ">= 0.10.0",
     "yarn": ">= 1.0.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-watch": "~0.5.3"
-  },
-  "dependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+
     "@bower_components/fastclick": "ftlabs/fastclick#>=0.6.11",
     "@bower_components/foundation": "zurb/bower-foundation#*",
     "@bower_components/jquery": "jquery/jquery-dist#>= 2.1.0",
