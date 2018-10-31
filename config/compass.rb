@@ -1,5 +1,5 @@
 # Require any additional compass plugins here.
-add_import_path "web/components/foundation/scss"
+add_import_path "node_modules/@bower_components/foundation/scss"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
