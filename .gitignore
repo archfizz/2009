@@ -1,10 +1,11 @@
 *.mno
+.sass-cache/*
+*.DS_Store
+
 /vendor/
 /bundle/
 /app/cache/
-/web/components/*
-.sass-cache/*
-*.DS_Store
-/web/_styles/*
+/public/components/*
+/public/_styles/*
 /node_modules/*
 /bin/*

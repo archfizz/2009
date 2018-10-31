@@ -33,9 +33,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "post-install-cmd": [
-            "bundle exec compass compile",
-            "yarn run grunt"
-        ]
+        "post-install-cmd": []
     }
 }
